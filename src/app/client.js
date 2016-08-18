@@ -1,8 +1,8 @@
 import 'react-toolbox/lib/commons.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PurpleAppBar from './PurpleAppBar.js';      // AppBar with simple overrides
-import SuccessButton from './SuccessButton.js';    // A button with complex overrides
+import PurpleAppBar from './PurpleAppBar';      // AppBar with simple overrides
+import SuccessButton from './SuccessButton';    // A button with complex overrides
 import { Button } from 'react-toolbox/lib/button'; // Bundled component import
 
 const App = () => (
