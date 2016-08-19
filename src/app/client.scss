@@ -1,0 +1,9 @@
+.appBar {
+  justify-content: space-between;
+
+  > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
