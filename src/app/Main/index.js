@@ -24,7 +24,7 @@ class Main extends React.Component {
 
   render () {
     return (
-      <Layout>
+      <Layout className={style.app}>
         <NavDrawer
           active={this.state.drawerActive}
           pinned={this.state.drawerPinned} permanentAt='xxxl'
