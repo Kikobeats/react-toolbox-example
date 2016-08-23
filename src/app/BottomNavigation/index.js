@@ -17,7 +17,7 @@ class BottomNavigation extends Component {
 
   componentWillReceiveProps(nextProps, nextState) {
     if (this.props.active !== nextProps.active && this.state.active !== nextProps.active) {
-        this.setState({ active: nextProps.active });
+      this.setState({ active: nextProps.active });
     }
   }
 

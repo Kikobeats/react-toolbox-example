@@ -14,8 +14,6 @@ class BottomNavigationItem extends React.Component {
       [style.liActive]: active
     })
 
-    console.log(index);
-
     return (
     <li
       {...other}
