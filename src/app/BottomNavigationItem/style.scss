@@ -1,0 +1,26 @@
+.li {
+  float: left;
+  display: inline-block;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  color: #B5B5B5;
+  font-size: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.liActive {
+  color: #5A9CEF;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size:30px;
+}
+
+.span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}

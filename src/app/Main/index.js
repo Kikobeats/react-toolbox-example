@@ -1,7 +1,9 @@
-import { AppBar, Checkbox, IconButton, Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox'
+import { AppBar, Checkbox, IconButton, Layout, NavDrawer, Panel, Sidebar, Button } from 'react-toolbox'
 import React from 'react'
 import style from './style'
 import Logo from '../Logo'
+import BottomNavigation from '../BottomNavigation'
+import BottomNavigationItem from '../BottomNavigationItem'
 
 class Main extends React.Component {
   state = {
@@ -56,9 +58,13 @@ class Main extends React.Component {
               <Checkbox label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />
             </section>
           </article>
-
-          <footer class="Site-footer"><div class="Footer"><span class="Footer-social"><iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=philipwalton&amp;repo=solved-by-flexbox&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="106px" height="20px"></iframe><a href="https://twitter.com/philwalton" class="twitter-follow-button" data-show-count="true" data-lang="en">@philwalton</a> <a href="https://twitter.com/share" class="twitter-share-button" data-text="A showcase of traditionally hard CSS problems, easily solved using flexbox." data-url="https://philipwalton.github.io/solved-by-flexbox/" data-count="horizontal" data-via="philwalton" data-related="philwalton:Creator of Solved by Flexbox">Tweet</a></span><div class="Footer-credits"><span class="Footer-credit">Created and maintained by <a href="https://philipwalton.com">Philip Walton</a>.</span> <span class="Footer-credit">Source code and examples released under the <a href="https://github.com/philipwalton/solved-by-flexbox/blob/master/LICENSE">MIT</a> license.</span> <span class="Footer-credit">Website and documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</span></div></div></footer>
         </Panel>
+
+        <BottomNavigation active={1}>
+          <BottomNavigationItem icon='home' label='Home'/>
+          <BottomNavigationItem icon='announcement' label='Messages'/>
+          <BottomNavigationItem icon='account_box' label='Me'/>
+        </BottomNavigation >
 
         <Sidebar pinned={ this.state.sidebarPinned } width={ 5 }>
           <header><IconButton icon='close' onClick={ this.toggleSidebar }/></header>
